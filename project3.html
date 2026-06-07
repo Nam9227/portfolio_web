@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3: Kỹ năng viết Prompt - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="index.html#projects">Dự án</a></li>
+            <li><a href="index.html#summary">Tổng kết</a></li>
+        </ul>
+    </nav>
+    <div class="project-page">
+        <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Quay lại danh sách dự án</a>
+        <div class="article-content">
+            
+            <h1>Phát triển kỹ năng viết Prompt trong học tập</h1>
+            
+            <h2>I. Phân tích tác vụ học tập</h2>
+            <p>Để tối ưu hóa hiệu quả của AI, chúng ta cần hiểu rõ bản chất của từng tác vụ:</p>
+            <ul>
+                <li><strong>Tác vụ 1: Tóm tắt bài đọc học thuật:</strong> Chuyển đổi thông tin phức tạp thành ngắn gọn nhưng không mất đi luận điểm cốt lõi.</li>
+                <li><strong>Tác vụ 2: Giải thích khái niệm phức tạp:</strong> Đơn giản hóa thành ngôn ngữ dễ hiểu, có ví dụ minh họa. AI hay mắc lỗi giải thích bằng thuật ngữ chuyên ngành khác.</li>
+                <li><strong>Tác vụ 3: Tạo bộ câu hỏi ôn tập:</strong> Tạo hệ thống câu hỏi đa dạng mức độ (nhận biết, thông hiểu, vận dụng).</li>
+            </ul>
+
+            <h2>II. Xây dựng các phiên bản Prompt</h2>
+            <h3>1. Tác vụ 1: Tóm tắt bài đọc</h3>
+            <ul>
+                <li><strong>Cơ bản:</strong> "Tóm tắt giúp tôi bài văn sau: [Văn bản]"</li>
+                <li><strong>Nâng cao (Role + CoT + Định dạng):</strong> "Bạn là một chuyên gia nghiên cứu học thuật... Hãy thực hiện tóm tắt theo các bước: B1: Xác định luận đề chính, B2: Liệt kê luận điểm hỗ trợ, B3: Rút ra kết luận. Trình bày dưới dạng bullet points."</li>
+            </ul>
+
+            <h3>2. Tác vụ 2: Giải thích khái niệm</h3>
+            <ul>
+                <li><strong>Cơ bản:</strong> "Lạm phát là gì?"</li>
+                <li><strong>Nâng cao (Role + Persona + Few-shot):</strong> "Bạn là giáo sư kinh tế học nổi tiếng giải thích theo phương pháp Feynman... 1. Định nghĩa bình dân. 2. Ví dụ ẩn dụ sinh động. 3. Nguyên nhân cốt lõi."</li>
+            </ul>
+
+            <h3>3. Tác vụ 3: Tạo bộ câu hỏi</h3>
+            <ul>
+                <li><strong>Cơ bản:</strong> "Tạo 5 câu trắc nghiệm về CMCN 4.0."</li>
+                <li><strong>Nâng cao (Role + Bloom + CoT):</strong> "Bạn là chuyên gia khảo thí. Tạo bộ câu hỏi theo thang đo Bloom (Nhận biết, Thông hiểu, Phân tích). Giải thích tại sao đáp án đó đúng và đáp án khác sai."</li>
+            </ul>
+
+            <h2>III. Tổng hợp nguyên tắc C-R-I-S-P</h2>
+            <p>Công thức viết prompt đỉnh cao trong học tập:</p>
+            <ul>
+                <li><strong>C - Context (Bối cảnh):</strong> Luôn cung cấp ngữ cảnh rõ ràng.</li>
+                <li><strong>R - Role (Vai trò):</strong> Định hình "bản sắc" cho AI (Chuyên gia, Gia sư).</li>
+                <li><strong>I - Intent/Instruction (Chỉ dẫn):</strong> Dùng động từ mạnh mẽ, chia nhỏ quy trình (First, Then, Finally).</li>
+                <li><strong>S - Style/Format (Phong cách):</strong> Quy định rõ đầu ra là bảng biểu, JSON, sơ đồ tư duy.</li>
+                <li><strong>P - Parameter (Giới hạn):</strong> Đặt ranh giới (VD: Không quá 200 từ).</li>
+            </ul>
+        
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Nguyễn Văn Nam (25021905).</p>
+    </footer>
+</body>
+</html>

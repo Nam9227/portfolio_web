@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4: Hợp tác trực tuyến - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="index.html#projects">Dự án</a></li>
+            <li><a href="index.html#summary">Tổng kết</a></li>
+        </ul>
+    </nav>
+    <div class="project-page">
+        <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Quay lại danh sách dự án</a>
+        <div class="article-content">
+            
+            <h1>Năng lực cộng tác trực tuyến và Quản lý dự án số</h1>
+            
+            <h2>Phần 1: Tổng quan dự án</h2>
+            <p><strong>Dự án:</strong> "Xây dựng mô hình và tài liệu đặc tả hệ thống cho Ứng dụng Quản lý Chi tiêu Cá nhân".</p>
+            <p><strong>Hệ sinh thái công cụ:</strong></p>
+            <ul>
+                <li><strong>Trello:</strong> Quản lý tác vụ (Kanban board: To-do, In Progress, Under Review, Done).</li>
+                <li><strong>Discord:</strong> Giao tiếp nhóm (Webhook, Channels chuyên biệt, Voice meeting).</li>
+                <li><strong>Google Workspace:</strong> Lưu trữ và soạn thảo (Drive, Docs).</li>
+            </ul>
+
+            <h2>Phần 2: Nhật ký quản lý tác vụ</h2>
+            <ul>
+                <li><strong>Task 1:</strong> Thiết kế sơ đồ ERD. (Nhãn: Đỏ - Gấp).</li>
+                <li><strong>Task 2:</strong> Viết tài liệu đặc tả thuộc tính. (Nhãn: Vàng).</li>
+                <li><strong>Task 3:</strong> Tổng hợp chuẩn hóa file. (Nhãn: Xanh lá).</li>
+            </ul>
+
+            <h2>Phần 3: Quản lý tài nguyên và Đóng góp</h2>
+            <p>Xây dựng cấu trúc thư mục 3 cấp trên Google Drive: <code>N28_DuAn_QuanLyChiTieu -> 02_Technical_Design -> 01_Database_Models</code>.</p>
+            <p>Quy chuẩn đặt tên tệp: <code>[TênNhóm]_[TênMôđun]_[Phiênbản]</code>.</p>
+            <p>Phân quyền: Chỉnh sửa (Editor) lúc làm việc, Xem (Viewer) cho bản Final để tránh ghi đè.</p>
+
+            <h2>Phần 4: Thách thức và Giải pháp</h2>
+            <ol>
+                <li><strong>Xung đột ý kiến thiết kế DB:</strong> Thay vì chat chữ (hơn 50 tin nhắn không kết quả), hẹn lên kênh Voice Discord share màn hình, chốt phương án trong 10 phút.</li>
+                <li><strong>Lệch pha thời gian (Người làm sáng, người làm đêm):</strong> Áp dụng "Cộng tác bất đồng bộ" (Asynchronous Collaboration) qua Trello. Tag tên kèm link Drive rõ ràng thay vì nhắn tin chờ đợi.</li>
+                <li><strong>Ghi đè và mất dữ liệu:</strong> Sử dụng Version History của Google Docs để khôi phục. Sau đó dùng tính năng "Suggesting" và khóa quyền Editor trực tiếp.</li>
+            </ol>
+            <p><strong>Kết luận:</strong> Việc làm chủ Trello, Discord, Google Docs giúp kiểm soát toàn bộ tiến độ, không rơi vào hoang mang trước deadline.</p>
+        
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Nguyễn Văn Nam (25021905).</p>
+    </footer>
+</body>
+</html>
