@@ -59,6 +59,13 @@
                 <li><strong>S - Style/Format (Phong cách):</strong> Quy định rõ đầu ra là bảng biểu, JSON, sơ đồ tư duy.</li>
                 <li><strong>P - Parameter (Giới hạn):</strong> Đặt ranh giới (VD: Không quá 200 từ).</li>
             </ul>
+            <h2>IV. Phân tích Cơ chế hoạt động của AI (Sự khác biệt cốt lõi)</h2>
+            <p>Tại sao Prompt nâng cao lại cho ra kết quả vượt trội so với Prompt cơ bản? Nguyên lý nằm ở <strong>cơ chế tự hồi quy (Autoregressive)</strong> và <strong>không gian xác suất (Probability Space)</strong> của các mô hình ngôn ngữ lớn (LLMs):</p>
+            <ul>
+                <li><strong>Thu hẹp Không gian Vector:</strong> Khi bạn chỉ dùng prompt <em>"Lạm phát là gì?"</em>, AI sẽ tìm kiếm ngẫu nhiên trong một không gian vector khổng lồ chứa hàng tỷ từ khóa liên quan đến kinh tế, dẫn đến câu trả lời chung chung hoặc mang tính bách khoa toàn thư. Bằng cách thêm yếu tố <strong>Role (Vai trò: Giáo sư)</strong> và <strong>Context (Ngữ cảnh: Bình dân, Feynman)</strong>, chúng ta đã "neo" (anchor) sự chú ý (Attention Mechanism) của AI vào một vùng không gian từ vựng hẹp hơn, cụ thể hơn.</li>
+                <li><strong>Chain-of-Thought (CoT) & Tự sửa lỗi:</strong> Việc chia nhỏ quy trình thành B1, B2, B3 ép buộc AI không đưa ra kết quả ngay lập tức (zero-shot) mà phải sinh ra các token trung gian (intermediate tokens). Theo nghiên cứu, số lượng token trung gian càng nhiều, khả năng suy luận logic của LLMs càng chính xác vì nó được "nghĩ lớn tiếng" (think aloud) trước khi chốt đáp án cuối cùng.</li>
+                <li><strong>Kiểm soát Định dạng (Format Control):</strong> Yêu cầu xuất ra bảng hoặc JSON buộc LLMs phải kích hoạt các tham số (parameters) liên quan đến định vị cấu trúc. Điều này rất quan trọng để đảm bảo tính nhất quán (Consistency) khi ứng dụng AI vào tự động hóa luồng công việc (Workflow automation).</li>
+            </ul>
         
         </div>
     </div>

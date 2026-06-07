@@ -44,13 +44,20 @@
             <p>Quy chuẩn đặt tên tệp: <code>[TênNhóm]_[TênMôđun]_[Phiênbản]</code>.</p>
             <p>Phân quyền: Chỉnh sửa (Editor) lúc làm việc, Xem (Viewer) cho bản Final để tránh ghi đè.</p>
 
-            <h2>Phần 4: Thách thức và Giải pháp</h2>
+            <h2>Phần 4: Ứng dụng Tính năng Nâng cao & Tối ưu hóa Quy trình</h2>
+            <p>Để đạt được hiệu suất cao nhất và giải quyết triệt để các vấn đề thường gặp khi làm việc nhóm trực tuyến, tôi đã áp dụng và thiết lập các tính năng nâng cao sau:</p>
+            <ul>
+                <li><strong>Tự động hóa (Trello Automation - Butler):</strong> Thiết lập quy tắc (Rule) tự động: Khi một thẻ (card) được kéo sang cột "Under Review", hệ thống sẽ tự động gán nhãn màu vàng (Pending), thêm thành viên phụ trách review vào thẻ, và tự động đặt deadline sau 24h. Tính năng này giúp giảm thiểu 30% thời gian thao tác thủ công và đảm bảo không ai quên task.</li>
+                <li><strong>Tích hợp thông báo (Discord Webhooks):</strong> Liên kết trực tiếp bảng Trello với kênh <code>#trello-updates</code> trên Discord thông qua Webhook. Mọi thay đổi về trạng thái, comment hay file đính kèm trên Trello đều đẩy thông báo theo thời gian thực về Discord, giúp cả nhóm theo dõi tiến độ mà không cần mở hai ứng dụng liên tục.</li>
+                <li><strong>Quản trị rủi ro xung đột dữ liệu (Google Docs Version History & Suggesting):</strong> Xây dựng quy trình "Review-first": Không ai được sửa trực tiếp vào file báo cáo chung mà phải dùng chế độ "Đề xuất" (Suggesting). Trưởng nhóm sẽ duyệt (Accept) hoặc từ chối (Reject) đề xuất. Hơn nữa, việc sử dụng "Lịch sử phiên bản" (Version History) giúp khôi phục dữ liệu bị xóa nhầm một cách hoàn hảo, giải quyết tận gốc nỗi sợ "ghi đè" khi hợp tác.</li>
+            </ul>
+
+            <h2>Phần 5: Thách thức và Giải pháp</h2>
             <ol>
                 <li><strong>Xung đột ý kiến thiết kế DB:</strong> Thay vì chat chữ (hơn 50 tin nhắn không kết quả), hẹn lên kênh Voice Discord share màn hình, chốt phương án trong 10 phút.</li>
                 <li><strong>Lệch pha thời gian (Người làm sáng, người làm đêm):</strong> Áp dụng "Cộng tác bất đồng bộ" (Asynchronous Collaboration) qua Trello. Tag tên kèm link Drive rõ ràng thay vì nhắn tin chờ đợi.</li>
-                <li><strong>Ghi đè và mất dữ liệu:</strong> Sử dụng Version History của Google Docs để khôi phục. Sau đó dùng tính năng "Suggesting" và khóa quyền Editor trực tiếp.</li>
             </ol>
-            <p><strong>Kết luận:</strong> Việc làm chủ Trello, Discord, Google Docs giúp kiểm soát toàn bộ tiến độ, không rơi vào hoang mang trước deadline.</p>
+            <p><strong>Kết luận:</strong> Việc không chỉ dừng lại ở mức "sử dụng" mà còn "tối ưu hóa" bằng Trello Automation, Discord Webhooks và quy trình quản trị phiên bản của Google Workspace đã giúp nhóm biến môi trường số thành văn phòng làm việc thực thụ, kiểm soát 100% tiến độ và rủi ro.</p>
         
         </div>
     </div>
