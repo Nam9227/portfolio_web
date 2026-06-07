@@ -23,41 +23,111 @@
             
             <h1>Năng lực cộng tác trực tuyến và Quản lý dự án số</h1>
             
-            <h2>Phần 1: Tổng quan dự án</h2>
-            <p><strong>Dự án:</strong> "Xây dựng mô hình và tài liệu đặc tả hệ thống cho Ứng dụng Quản lý Chi tiêu Cá nhân".</p>
-            <p><strong>Hệ sinh thái công cụ:</strong></p>
+            <h2>PHẦN 1: TỔNG QUAN DỰ ÁN VÀ THIẾT LẬP HỆ THỐNG CÔNG CỤ</h2>
+            <h3>1.1. Bối cảnh dự án nhóm</h3>
+            <p>Trong thời gian 1 tuần, Nhóm 28 đã triển khai dự án nhỏ: "Xây dựng mô hình và tài liệu đặc tả hệ thống cho Ứng dụng Quản lý Chi tiêu Cá nhân". Với vai trò là một sinh viên Khoa học máy tính phụ trách phần kỹ thuật, tác vụ của tôi tập trung vào việc thiết kế sơ đồ thực thể mối quan hệ (ERD), đặc tả các bảng dữ liệu và viết tài liệu hướng dẫn API cơ bản. Do thời gian gấp rút và lịch học của các thành viên khác nhau, việc tối ưu hóa các công cụ hợp tác trực tuyến là điều kiện tiên quyết để hoàn thành dự án.</p>
+            
+            <h3>1.2. Chiến lược lựa chọn và tối ưu hóa hệ sinh thái công cụ</h3>
+            <p>Để đáp ứng yêu cầu khắt khe của dự án và tiêu chí đánh giá mức độ chuyên nghiệp, tôi đã chủ động cùng nhóm thiết lập hệ thống 3 công cụ thuộc các nhóm chức năng khác nhau:</p>
+            <pre>
+[Hệ thống Quản lý Tác vụ: TRELLO] 
+ │
+ ├── (Đồng bộ qua Webhook/Thông báo) ──> [Hệ thống Giao tiếp: DISCORD]
+ │                                              │
+ └─────── (Liên kết link tài liệu) ───────────────┴─> [Lưu trữ & Soạn thảo: GOOGLE WORKSPACE]
+            </pre>
             <ul>
-                <li><strong>Trello:</strong> Quản lý tác vụ (Kanban board: To-do, In Progress, Under Review, Done).</li>
-                <li><strong>Discord:</strong> Giao tiếp nhóm (Webhook, Channels chuyên biệt, Voice meeting).</li>
-                <li><strong>Google Workspace:</strong> Lưu trữ và soạn thảo (Drive, Docs).</li>
+                <li><strong>Quản lý tác vụ (Trello):</strong> Thay vì chỉ sử dụng các thẻ đơn giản, tôi đã thiết lập hệ thống Kanban chuẩn gồm 4 cột: To-do (Cần làm), In Progress (Đang làm), Under Review (Chờ duyệt), và Done (Hoàn thành). Tôi đã tối ưu hóa không gian làm việc bằng cách định nghĩa hệ thống Labels (Nhãn màu): Đỏ (Ưu tiên cao/Gấp), Vàng (Ưu tiên trung bình), Xanh lá (Đã hoàn thành bảo vệ).</li>
+                <li><strong>Soạn thảo, Lưu trữ & Chia sẻ (Google Drive & Google Docs):</strong> Sử dụng chung hệ sinh thái Google để tận dụng khả năng đồng bộ theo thời gian thực. Toàn bộ tài liệu đặc tả được viết trên Docs và quản lý thư mục đa cấp trên Drive.</li>
+                <li><strong>Giao tiếp nhóm (Discord):</strong> Tôi đề xuất dùng Discord thay vì Messenger vì khả năng phân tách các kênh (Channels) riêng biệt như: #thông-báo, #tài-liệu, #thảo-luận-database, #kênh-voice-meeting.</li>
+            </ul>
+            <p><strong>Minh chứng thiết lập tài khoản (Yêu cầu Mức 4):</strong> Toàn bộ tài khoản của tôi trên Trello, Discord, Google Workspace đều được đồng bộ hóa thống nhất: Sử dụng ảnh đại diện cá nhân rõ nét, đặt tên hiển thị đúng cấu trúc [K70] Nguyễn Văn Nam - 25021905 để giảng viên và các thành viên dễ dàng nhận diện.</p>
+
+            <h2>PHẦN 2: NHẬT KÝ QUẢN LÝ TÁC VỤ VÀ TƯƠNG TÁC CÁ NHÂN (1 TUẦN)</h2>
+            <h3>2.1. Quản lý tác vụ cá nhân trên Trello</h3>
+            <p>Trong tuần làm việc, tôi được phân công 3 đầu việc lớn. Khác với cách làm việc tự phát, tôi đã thiết lập 100% nhiệm vụ có mô tả chi tiết, checklist con và deadline rõ ràng:</p>
+            <ul>
+                <li><strong>Task 1:</strong> Thiết kế sơ đồ ERD cho ứng dụng chi tiêu.
+                    <br><em>Mô tả:</em> Xác định các thực thể (User, Transaction, Category, Budget) và mối quan hệ giữa chúng.
+                    <br><em>Deadline:</em> 23:00 ngày 25/05/2026. <em>Nhãn:</em> Đỏ (Gấp).
+                </li>
+                <li><strong>Task 2:</strong> Viết tài liệu đặc tả thuộc tính các bảng dữ liệu.
+                    <br><em>Mô tả:</em> Định nghĩa kiểu dữ liệu (int, varchar, datetime), khóa chính, khóa ngoại cho cơ sở dữ liệu.
+                    <br><em>Deadline:</em> 23:00 ngày 27/05/2026. <em>Nhãn:</em> Vàng.
+                </li>
+                <li><strong>Task 3:</strong> Tổng hợp và chuẩn hóa định dạng file báo cáo kỹ thuật.
+                    <br><em>Mô tả:</em> Rà soát lỗi chính tả, căn lề, tạo mục lục tự động cho phần kỹ thuật.
+                    <br><em>Deadline:</em> 12:00 ngày 29/05/2026. <em>Nhãn:</em> Xanh lá.
+                </li>
+            </ul>
+            <p>Tôi thực hiện cập nhật tiến độ liên tục (4 lần/tuần). Mỗi khi hoàn thành một phần nhỏ (ví dụ: vẽ xong thực thể User), tôi đều vào thẻ Trello tick vào checklist và để lại bình luận: "Đã hoàn thành 50% sơ đồ ERD, đang đợi bạn Phong duyệt phần liên kết thực thể Category".</p>
+
+            <h3>2.2. Hoạt động tương tác, thảo luận chủ động trên Discord</h3>
+            <p>Để đảm bảo dự án chạy mượt mà, tôi duy trì tần suất tương tác cao (hơn 12 lượt thảo luận/tuần) trên kênh Discord của Nhóm 28. Tôi không chỉ báo cáo phần việc của mình mà còn chủ động hỗ trợ các thành viên khác:</p>
+            <ul>
+                <li><strong>Ngày 24/05/2026:</strong> Chủ động tag @Đinh Gia Phong trong kênh #thảo-luận-database để làm rõ luồng dữ liệu khi người dùng xóa một danh mục chi tiêu (Xóa cứng hay xóa mềm).</li>
+                <li><strong>Ngày 26/05/2026:</strong> Khi bạn @Nguyễn Tiến Minh Nhật gặp khó khăn trong việc kết nối giao diện front-end với logic database, tôi đã chủ động mở cuộc gọi Voice, chia sẻ màn hình (Screen Share) để hỗ trợ gỡ lỗi trực tiếp.</li>
+                <li><strong>Ngày 28/05/2026:</strong> Tag toàn bộ nhóm @everyone để nhắc nhở hạn chót hoàn thiện nội dung để tôi tiến hành tổng hợp file.</li>
             </ul>
 
-            <h2>Phần 2: Nhật ký quản lý tác vụ</h2>
+            <h2>PHẦN 3: QUẢN LÝ TÀI NGUYÊN VÀ LỊCH SỬ ĐÓNG GÓP NỘI DUNG</h2>
+            <h3>3.1. Đóng góp nội dung trực tiếp trên Google Docs</h3>
+            <p>Toàn bộ phần nội dung "Thiết kế hệ thống và Cơ sở dữ liệu" từ trang 12 đến trang 18 của báo cáo nhóm do tôi trực tiếp biên soạn trên file Google Docs chung.</p>
+            <p>Năng lực cộng tác của tôi được thể hiện qua Lịch sử phiên bản (Version History) của Google Docs. Tài khoản của tôi được hệ thống ghi nhận có các phiên bản chỉnh sửa độc lập, không có hiện tượng sao chép nguyên khối. Ngoài ra, tôi sử dụng chế độ Suggesting (Đề xuất) khi muốn sửa đổi phần nội dung tổng quan của các bạn khác để thể hiện sự tôn trọng sản phẩm chung.</p>
+
+            <h3>3.2. Tổ chức lưu trữ tài nguyên đa cấp khoa học trên Google Drive</h3>
+            <p>Tôi được giao quản lý thư mục thành phần kỹ thuật của nhóm. Tôi đã xây dựng một cấu trúc thư mục logic gồm 3 cấp rõ ràng:</p>
+            <pre>
+[Thư mục gốc]: N28_DuAn_QuanLyChiTieu
+ └── [Cấp 1]: 02_Technical_Design
+     ├── [Cấp 2]: 01_Database_Models
+     │   └── [Cấp 3 (Tệp)]: N28_ERD_Database_v1.0.png
+     │   └── [Cấp 3 (Tệp)]: N28_DataDictionary_v1.1.docx
+     └── [Cấp 2]: 02_API_Specs
+         └── [Cấp 3 (Tệp)]: N28_API_Documentation_Final.pdf
+            </pre>
             <ul>
-                <li><strong>Task 1:</strong> Thiết kế sơ đồ ERD. (Nhãn: Đỏ - Gấp).</li>
-                <li><strong>Task 2:</strong> Viết tài liệu đặc tả thuộc tính. (Nhãn: Vàng).</li>
-                <li><strong>Task 3:</strong> Tổng hợp chuẩn hóa file. (Nhãn: Xanh lá).</li>
+                <li><strong>Quy chuẩn đặt tên tệp tin (Tuân thủ 100%):</strong> Toàn bộ tệp tin do tôi tải lên đều tuân theo quy tắc: <code>[TênNhóm]_[TênMôđun]_[Phiênbản]</code>. (Ví dụ: N28_ERD_Database_v1.0.png).</li>
+                <li><strong>Phân quyền truy cập hợp lý:</strong> Đối với các thư mục tài liệu thô, tôi thiết lập quyền Editor (Chỉnh sửa) cho 4 thành viên trong Nhóm 28. Đối với thư mục chứa sản phẩm cuối cùng (Final), tôi chuyển quyền của các thành viên về Viewer (Người xem) để tránh việc vô tình chỉnh sửa hoặc xóa nhầm dữ liệu trước giờ nộp bài.</li>
             </ul>
 
-            <h2>Phần 3: Quản lý tài nguyên và Đóng góp</h2>
-            <p>Xây dựng cấu trúc thư mục 3 cấp trên Google Drive: <code>N28_DuAn_QuanLyChiTieu -> 02_Technical_Design -> 01_Database_Models</code>.</p>
-            <p>Quy chuẩn đặt tên tệp: <code>[TênNhóm]_[TênMôđun]_[Phiênbản]</code>.</p>
-            <p>Phân quyền: Chỉnh sửa (Editor) lúc làm việc, Xem (Viewer) cho bản Final để tránh ghi đè.</p>
-
-            <h2>Phần 4: Ứng dụng Tính năng Nâng cao & Tối ưu hóa Quy trình</h2>
-            <p>Để đạt được hiệu suất cao nhất và giải quyết triệt để các vấn đề thường gặp khi làm việc nhóm trực tuyến, tôi đã áp dụng và thiết lập các tính năng nâng cao sau:</p>
+            <h2>PHẦN 4: ĐÁNH GIÁ HIỆU QUẢ CÔNG CỤ VÀ PHÂN TÍCH CHUYÊN SÂU</h2>
+            <h3>4.1. Đánh giá ưu điểm và nhược điểm của các công cụ đối với cá nhân</h3>
             <ul>
-                <li><strong>Tự động hóa (Trello Automation - Butler):</strong> Thiết lập quy tắc (Rule) tự động: Khi một thẻ (card) được kéo sang cột "Under Review", hệ thống sẽ tự động gán nhãn màu vàng (Pending), thêm thành viên phụ trách review vào thẻ, và tự động đặt deadline sau 24h. Tính năng này giúp giảm thiểu 30% thời gian thao tác thủ công và đảm bảo không ai quên task.</li>
-                <li><strong>Tích hợp thông báo (Discord Webhooks):</strong> Liên kết trực tiếp bảng Trello với kênh <code>#trello-updates</code> trên Discord thông qua Webhook. Mọi thay đổi về trạng thái, comment hay file đính kèm trên Trello đều đẩy thông báo theo thời gian thực về Discord, giúp cả nhóm theo dõi tiến độ mà không cần mở hai ứng dụng liên tục.</li>
-                <li><strong>Quản trị rủi ro xung đột dữ liệu (Google Docs Version History & Suggesting):</strong> Xây dựng quy trình "Review-first": Không ai được sửa trực tiếp vào file báo cáo chung mà phải dùng chế độ "Đề xuất" (Suggesting). Trưởng nhóm sẽ duyệt (Accept) hoặc từ chối (Reject) đề xuất. Hơn nữa, việc sử dụng "Lịch sử phiên bản" (Version History) giúp khôi phục dữ liệu bị xóa nhầm một cách hoàn hảo, giải quyết tận gốc nỗi sợ "ghi đè" khi hợp tác.</li>
+                <li><strong>Trello:</strong> 
+                    <br><em>Ưu điểm:</em> Giúp tôi giải phóng bộ nhớ não bộ. Nhìn vào bảng Kanban, tôi biết ngay hôm nay mình phải làm gì, không bị sót việc (miss task). Việc có deadline thúc đẩy tôi hoàn thành công việc đúng giờ.
+                    <br><em>Nhược điểm:</em> Bản miễn phí giới hạn một số tính năng tự động hóa (Automation) nâng cao.
+                </li>
+                <li><strong>Google Workspace:</strong>
+                    <br><em>Ưu điểm:</em> Khả năng đồng bộ thời gian thực tuyệt vời. Tôi và bạn Phú có thể cùng viết tài liệu đặc tả một lúc mà không sợ bị đè file.
+                    <br><em>Nhược điểm:</em> Định dạng văn bản đôi khi bị nhảy lỗi khi xuất từ Google Docs sang Microsoft Word (.docx).
+                </li>
+                <li><strong>Discord:</strong>
+                    <br><em>Ưu điểm:</em> Chất lượng âm thanh cuộc gọi rất tốt, phân chia kênh rõ ràng giúp tôi không bị ngợp tin nhắn như khi dùng Messenger.
+                    <br><em>Nhược điểm:</em> Giao diện hơi phức tạp với những bạn trong nhóm không quen dùng các nền tảng dành cho game thủ.
+                </li>
             </ul>
 
-            <h2>Phần 5: Thách thức và Giải pháp</h2>
-            <ol>
-                <li><strong>Xung đột ý kiến thiết kế DB:</strong> Thay vì chat chữ (hơn 50 tin nhắn không kết quả), hẹn lên kênh Voice Discord share màn hình, chốt phương án trong 10 phút.</li>
-                <li><strong>Lệch pha thời gian (Người làm sáng, người làm đêm):</strong> Áp dụng "Cộng tác bất đồng bộ" (Asynchronous Collaboration) qua Trello. Tag tên kèm link Drive rõ ràng thay vì nhắn tin chờ đợi.</li>
-            </ol>
-            <p><strong>Kết luận:</strong> Việc không chỉ dừng lại ở mức "sử dụng" mà còn "tối ưu hóa" bằng Trello Automation, Discord Webhooks và quy trình quản trị phiên bản của Google Workspace đã giúp nhóm biến môi trường số thành văn phòng làm việc thực thụ, kiểm soát 100% tiến độ và rủi ro.</p>
+            <h3>4.2. Phân tích 3 thách thức lớn và giải pháp xử lý của cá nhân</h3>
+            <p>Trong quá trình làm việc nhóm 1 tuần qua, tôi đã đối mặt với 3 thách thức lớn liên quan đến sự cộng tác và đã chủ động đưa ra các giải pháp công nghệ để giải quyết:</p>
+            <ul>
+                <li><strong>Thách thức 1: Xung đột ý kiến khi thiết kế Cơ sở dữ liệu dẫn đến "bão" tin nhắn</strong>
+                    <br><em>Bối cảnh:</em> Khi thiết kế bảng Transaction (Giao dịch), tôi và bạn Minh Nhật có xung đột lớn về việc có nên tách bảng Category (Danh mục) riêng hay gộp chung. Việc tranh luận bằng text trên Discord kéo dài hơn 50 tin nhắn mà không đi đến hồi kết, gây nhiễu kênh chung và làm loãng thông tin của các thành viên khác.
+                    <br><em>Giải pháp cá nhân:</em> Tôi chủ động chấm dứt việc gõ text. Tôi sử dụng Trello tạo một thẻ nhiệm vụ tên là "Biện luận thiết kế DB: Tách hay gộp Category" và đính kèm link bản vẽ nháp của cả hai vào đó. Sau đó, tôi hẹn Nhật vào kênh Voice Discord, bật tính năng chia sẻ màn hình để vừa chỉ vào sơ đồ vừa nói chuyện trực tiếp. Kết quả, hai đứa chốt được phương án tách bảng chỉ trong 10 phút gọi thoại và lưu lại kết luận ngay dưới phần comment của thẻ Trello để nhóm cùng nắm được.
+                </li>
+                <li><strong>Thách thức 2: Thành viên nhóm cập nhật tiến độ bất đối xứng (Lệch pha thời gian)</strong>
+                    <br><em>Bối cảnh:</em> Do lịch học cá nhân và lịch đi làm thêm, các thành viên Nhóm 28 có giờ sinh hoạt rất khác nhau. Tôi thường làm việc vào ban đêm, trong khi bạn Phong lại làm việc vào buổi sáng. Điều này dẫn đến việc khi tôi cần dữ liệu từ Phong để làm phần tiếp theo, tôi phải đợi rất lâu, làm đình trệ tiến độ cá nhân.
+                    <br><em>Giải pháp cá nhân:</em> Tôi đề xuất nhóm áp dụng nguyên tắc "Cộng tác bất đồng bộ" (Asynchronous Collaboration) thông qua Trello. Thay vì nhắn tin chờ đợi phản hồi trực tiếp, tôi vào Trello của Phong, xem danh sách checklist xem bạn đã làm đến đâu. Nếu cần dữ liệu, tôi viết rõ yêu cầu vào phần comment của Task trên Trello, tag tên Phong kèm link thư mục Drive tôi đã tạo sẵn để Phong thả file vào đó ngay khi làm xong. Giải pháp này giúp tôi hoàn toàn chủ động điều phối thời gian của mình mà không phụ thuộc vào việc bạn có đang online hay không.
+                </li>
+                <li><strong>Thách thức 3: Rủi ro ghi đè và mất mát dữ liệu khi tổng hợp báo cáo kỹ thuật</strong>
+                    <br><em>Bối cảnh:</em> Khi đến giai đoạn cuối (chuẩn hóa định dạng file), có tình trạng một số thành viên sao chép trực tiếp nội dung từ bên ngoài vào file Google Docs chung, làm hỏng toàn bộ định dạng font chữ, căn lề (Layout) mà tôi đã chuẩn hóa trước đó, thậm chí có thành viên vô tình xóa mất một bảng đặc tả thuộc tính tôi đã viết.
+                    <br><em>Giải pháp cá nhân:</em> Đầu tiên, tôi sử dụng tính năng Version History của Google Docs để khôi phục lại đoạn văn bản bị mất. Sau đó, tôi triệt để áp dụng giải pháp quản lý quyền truy cập trên Google Drive: Tôi khóa quyền chỉnh sửa trực tiếp file báo cáo tổng của các thành viên, chuyển họ sang quyền Commenter (Người bình luận) hoặc Viewer. Tôi yêu cầu các thành viên nếu có chỉnh sửa nội dung thì viết vào một file nháp riêng hoặc sử dụng tính năng "Suggesting", tôi sẽ là người duyệt cuối cùng (Final Reviewer) để merge (gộp) dữ liệu vào file gốc. Điều này đảm bảo file báo cáo đạt độ thẩm mỹ cao nhất để nộp bài.
+                </li>
+            </ul>
+
+            <h2>PHẦN 5: KẾT LUẬN VÀ BÀI HỌC KINH NGHIỆM</h2>
+            <p>Qua 1 tuần thực hiện dự án nhỏ cùng Nhóm 28, bài tập này đã giúp tôi nhận ra rằng: Kỹ năng công nghệ số không chỉ là biết lập trình, mà quan trọng hơn là biết cách vận hành bản thân trong một không gian làm việc số.</p>
+            <p>Việc làm chủ các công cụ Trello, Discord và Google Workspace giúp tôi kiểm soát hoàn toàn tiến độ công việc cá nhân, không rơi vào trạng thái hoang mang trước thời hạn nộp bài. Tư duy quản lý tài nguyên khoa học và kỹ năng giải quyết xung đột bất đồng bộ chính là những hành trang thực tế nhất giúp tôi chuẩn bị cho môi trường làm việc doanh nghiệp chuyên nghiệp sau này khi tốt nghiệp tại UET.</p>
         
         </div>
     </div>
